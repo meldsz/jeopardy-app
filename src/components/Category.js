@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { pickCategory } from '../actions/index';
 import Clue from './Clue';
 
-class Category extends Component {
+export class Category extends Component {
     constructor() {
         super();
         this.state = {
