@@ -12,11 +12,11 @@ class Clue extends Component {
         const { value, question, answer } = this.props.clue;
         return (
             <div className="clue" onClick={() => this.setState({ reveal: true })}>
-                <h5>{value}</h5>
+                <h5>{value || 'unknown'}</h5>
+                <hr />
                 <h4>{question}</h4>
                 <hr />
                 <h4 className={this.state.reveal ? 'text-revealed' : 'text-hidden'}>{answer}</h4>
-                <hr />
             </div>
         );
     }
